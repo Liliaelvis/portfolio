@@ -27,8 +27,8 @@ export function ThemeToggle() {
         <button
           key={id}
           onClick={() => setTheme(id)}
-          className={`p-2 rounded-md text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition ${
-            theme === id ? 'bg-gray-200 dark:bg-gray-700' : ''
+          className={`p-2 rounded-md text-accent hover:text-secondary-dark dark:hover:text-white transition ${
+            theme === id ? 'bg-gray-700' : ''
           }`}
           aria-label={`Switch to ${id} mode`}
         >

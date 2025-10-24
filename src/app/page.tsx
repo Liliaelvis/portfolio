@@ -13,7 +13,7 @@ export default function Home() {
     <div className="min-h-dvh">
       {/* Hero Section */}
       <SectionWrapper className="bg-amber-100 dark:bg-amber-900 -mt-26 pt-26 text-gray-900 dark:text-gray-100">
-        <div className="min-h-[60vh] flex flex-col justify-center items-start py-16 px-4">
+        <div className="min-h-[60vh] flex flex-col px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             {HeroText.title}
           </h1>

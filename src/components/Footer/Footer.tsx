@@ -6,11 +6,11 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-24 border-t bg-zinc-200 dark:bg-zinc-900 border-zinc-100 dark:border-zinc-800 px-4 py-8">
+    <footer className="relative mt-24 border-t bg-gray-900 dark:bg-gray-800 border-zinc-100 dark:border-zinc-800 px-4 py-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 items-start justify-between w-full max-w-440 mx-auto">
         {/* Columna izquierda */}
-        <div className="text-sm text-muted-foreground">
-          &copy; {year} <span className="font-medium text-foreground">Lilia E. Martinez Rosas</span>
+        <div className="text-sm text-secondary-dark dark:text-secondary">
+          &copy; {year} <span className="font-medium">Lilia E. Martinez Rosas</span>
           <p>
             <Link href="tel:+19792862584" className="hover:text-white transition-colors" aria-label="Call Phone Number">
               +1 (979) 2 86 25 84
