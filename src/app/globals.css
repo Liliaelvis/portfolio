@@ -1,26 +1,29 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --color-primary: oklch(44.6% 0.03 256.802);
+  --color-primary-strong: oklch(37.3% 0.034 259.733);
+  --color-primary-lite: oklch(55.1% 0.027 264.364);
+  --color-primary-foreground: oklch(98.5% 0.002 247.839);
+  --color-primary-dark: oklch(92.8% 0.006 264.531);
+  --color-primary-dark-strong: oklch(70.7% 0.022 261.325);
+  --color-primary-dark-lite: oklch(96.7% 0.003 264.542);
+  --color-primary-dark-foreground: oklch(13% 0.028 261.692);
+  --color-secondary: oklch(68.1% 0.162 75.834);
+  --color-secondary-strong: oklch(55.4% 0.135 66.442);
+  --color-secondary-lite: oklch(79.5% 0.184 86.047);
+  --color-secondary-foreground: oklch(20.3% 0.12 261.629);
+  --color-secondary-dark: oklch(89.9% 0.061 343.231);
+  --color-secondary-dark-strong: oklch(82.3% 0.12 346.018);
+  --color-secondary-dark-lite: oklch(94.8% 0.028 342.258);
+  --color-secondary-dark-foreground: oklch(20.3% 0.12 261.629);
+  --color-accent: oklch(58.6% 0.253 17.585);
+  --color-accent-strong: oklch(51.4% 0.222 16.935);
+  --color-accent-lite: oklch(64.5% 0.246 16.439);
+  --color-accent-foreground: oklch(98.5% 0.002 247.839);
+  --color-alert: oklch(57.7% 0.245 27.325);
+  --color-alert-strong: oklch(50.7% 0.213 26.48);
+  --color-alert-lite: oklch(63.5% 0.24 25.991);
+  --color-alert-foreground: oklch(98.5% 0.002 247.839);
 }
