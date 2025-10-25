@@ -17,13 +17,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="grid-col-1 min-h-svh relative antialiased">
+      <body className="flex flex-col min-h-screen antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <NavBar />
-          <div className="z-0 pt-22 min-h-screen dark:text-white text-black">
-            {children}
+          <div className="flex flex-col min-h-screen">
+            <NavBar />
+            <main className="flex-1 z-0 pt-22 dark:text-white text-black">
+              {children}
+            </main>
+            <Footer />
           </div>
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

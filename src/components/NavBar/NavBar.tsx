@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
-import { ArrowDownToLine, House, CircleUser, Briefcase } from 'lucide-react';
+import { ArrowDownToLine, House, Briefcase } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
@@ -40,12 +40,12 @@ const NavBar = () => {
         setIsMenuOpen(false);
     };
   return (
-    <div className="fixed z-40 flex justify-center mx-autoflex w-full inset-x-0">
+    <div className="fixed flex justify-center mx-autoflex w-full inset-x-0 z-20">
       <nav id="navbar" className="w-full max-w-340 p-4 flex flex-wrap shadow-sm shadow-primary-dark-foreground backdrop-blur-xs z-50 bg-accent dark:bg-secondary-dark text-primary-dark dark:text-primary-dark-foreground rounded-full mt-4 min-h-16">
         {/* Large Screen*/}
         <div className="hidden grow lg:flex lg:items-center lg:w-auto space-x-4">
           <div>
-            <a href="/resumee.pdf" download="resumee.pdf" className="inline-block text-md px-4 py-2 leading-none border dark:border-black hover:dark:bg-black rounded hover:border-transparent hover:bg-white hover:text-accent hover:dark:text-secondary-dark mt-4 lg:mt-0 transition-colors duration-300" aria-label="Download My Resumee">
+            <a href="/resumee.pdf" download="resumee.pdf" className="inline-block text-md px-4 py-2 leading-none border dark:border-black hover:dark:bg-black rounded hover:border-transparent hover:bg-white hover:text-black hover:dark:text-secondary-dark mt-4 lg:mt-0 transition-colors duration-300" aria-label="Download My Resumee">
               <ArrowDownToLine className="inline-block mr-1" aria-hidden="true" />
               My Resumee
             </a>
@@ -54,7 +54,7 @@ const NavBar = () => {
             <Tooltip>
               <TooltipTrigger>
                 <Link href="#Work" aria-label="See My Work History">
-                  <Briefcase className="inline-block hover:bg-gray-100/75 hover:text-black rounded-full py-0 p-1 w-10 h-10 transition-colors duration-300"/>
+                  <Briefcase className="inline-block hover:bg-gray-100/75 hover:dark:bg-black hover:text-black hover:dark:text-secondary-dark rounded-full py-0 p-1 w-10 h-10 transition-colors duration-300"/>
                 </Link>
               </TooltipTrigger>
               <TooltipContent className='dark:text-white'>
@@ -68,7 +68,7 @@ const NavBar = () => {
         <div className="block lg:hidden" ref={menuRef}>
           <button 
             onClick={toggleMenu}
-            className="flex items-center px-3 py-2 mt-2 border dark:border-black hover:dark:bg-black rounded hover:border-transparent hover:bg-white hover:text-accent hover:dark:text-secondary-dark lg:mt-0 transition-colors duration-300"
+            className="flex items-center px-3 py-2 mt-2 border dark:border-black hover:dark:bg-black rounded hover:border-transparent hover:bg-white hover:text-black hover:dark:text-secondary-dark lg:mt-0 transition-colors duration-300"
             aria-label="Toggle menu"
           >
             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
@@ -99,7 +99,7 @@ const NavBar = () => {
         </div>
         {/* Home link */}
         <div className="flex items-center grow justify-end mr-1">
-          <Tooltip>
+          {/* <Tooltip>
             <TooltipTrigger>
               <Link href="/contact" className="block lg:inline-block lg:mt-0 font-bold text-primary-foreground dark:text-primary-dark-foreground">
                 <CircleUser className="inline-block hover:bg-gray-100/75 hover:text-black hover:dark:text-secondary-dark hover:dark:bg-black rounded-full py-0 p-1 w-10 h-10 transition-colors duration-300" aria-label="Go to Contact"/>
@@ -108,7 +108,7 @@ const NavBar = () => {
             <TooltipContent className='dark:text-white'>
               <p>Let&apos;s Connect</p>
             </TooltipContent>
-          </Tooltip>
+          </Tooltip> */}
           <Tooltip>
             <TooltipTrigger>
               <Link href="/" aria-label="Go to Home">

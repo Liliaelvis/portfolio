@@ -2,7 +2,16 @@
 @import "tw-animate-css";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@font-face {
+  font-family: 'Schoolbell';
+  src: url('/fonts/Schoolbell-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
+  --font-photoText: 'Schoolbell';
   --color-primary: oklch(44.6% 0.03 256.802);
   --color-primary-strong: oklch(37.3% 0.034 259.733);
   --color-primary-lite: oklch(55.1% 0.027 264.364);
