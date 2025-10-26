@@ -44,7 +44,7 @@ export default function Home() {
       </SectionWrapper>
       <SectionWrapper className="p-2 pb-8 bg-amber-100 dark:bg-amber-900">
         {/* My Approach section */}
-        <div className="w-184 mx-auto hover:-skew-y-1 from-amber-400 to-amber-500 bg-linear-to-br text-shadow-lg p-8 rounded-lg flex-justify-center shadow-xl/30 inset-shadow-amber-800/50">
+        <div className="max-w-184 text-wrap mx-auto hover:-skew-y-1 from-amber-400 to-amber-500 bg-linear-to-br text-shadow-lg p-8 rounded-lg flex-justify-center shadow-xl/30 inset-shadow-amber-800/50">
           <p className="text-lg md:text-xl font-bold">
             {HeroText.myApproach}
           </p>
