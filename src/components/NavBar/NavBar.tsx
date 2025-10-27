@@ -40,7 +40,7 @@ const NavBar = () => {
         setIsMenuOpen(false);
     };
   return (
-    <div className="fixed flex justify-center mx-autoflex w-full inset-x-0 z-20">
+    <div className="fixed flex justify-center mx-autoflex w-full inset-x-0 z-20 px-2.5 md:px-2">
       <nav id="navbar" className="w-full max-w-340 p-4 flex flex-wrap shadow-sm shadow-primary-dark-foreground backdrop-blur-xs z-50 bg-accent dark:bg-secondary-dark text-primary-dark dark:text-primary-dark-foreground rounded-full mt-4 min-h-16">
         {/* Large Screen*/}
         <div className="hidden grow lg:flex lg:items-center lg:w-auto space-x-4">
