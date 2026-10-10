@@ -2,12 +2,16 @@ import { PolaroidPhoto } from "@/components/Landing/PolaroidPhoto";
 import { SectionWrapper } from "@/components/Landing/SectionWrapper";
 
 const HeroText = {
-  title: ``,
-  whoAmI: ``,
-  whatIDo: ``,
-  myApproach: ``,
-  myValues: ``,
-  callToAction: ``,
+  title: `Junior SOC Analyst | Cybersecurity | Biomedical Engineer`,
+  whoAmI: `Biomedical Engineer transitioning into cybersecurity, targeting Tier 1 SOC Analyst roles. Completing Fortinet NSE 1 and
+developing foundations in alert triage, log analysis, and incident documentation. Background in real-time troubleshooting
+during live neurosurgical procedures, systematic root-cause analysis of electronic faults, and client-facing communication
+in English and Spanish. Calm under pressure, flexible for any shift (day, evening, overnight, weekends), and fast to learn new
+tools.`,
+  whatIDo: `WIDO`,
+  myApproach: `MA`,
+  myValues: `MV`,
+  callToAction: `CTA`,
 };
 export default function Home() {
   return (
