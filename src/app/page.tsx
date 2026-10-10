@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <SectionWrapper className="relative bg-amber-100 dark:bg-amber-900 -mt-26 pt-30 text-gray-900 dark:text-gray-100">
+      <SectionWrapper className="relative bg-amber-100 dark:bg-amber-900 -mt-26 pt-30 text-gray-900 dark:text-gray-100 h-dvh">
         <div className="flex flex-col px-4 pb-4">
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-0">
             <div className="grid grid-cols-1 gap-2">

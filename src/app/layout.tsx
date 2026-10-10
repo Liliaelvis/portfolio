@@ -7,7 +7,12 @@ import { ThemeProvider } from "@/utils/theme/ThemeProvider";
 export const metadata: Metadata = {
   title: "Lilia Martinez - Portfolio",
   description: "This is the portfolio of Lilia Martinez, a Project Manager.",
-  keywords: ["Lilia Martinez", "Portfolio", "Project Manager", "Project Coordinator"],
+  keywords: [
+    "Lilia Martinez",
+    "Portfolio",
+    "Project Manager",
+    "Project Coordinator",
+  ],
 };
 
 export default function RootLayout({
