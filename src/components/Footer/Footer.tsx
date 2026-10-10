@@ -1,6 +1,6 @@
-import React from 'react'
-import { ThemeToggle } from '@/components/Theme/ThemeToggle'
-import Link from 'next/link'
+import React from "react";
+import { ThemeToggle } from "@/components/Theme/ThemeToggle";
+import Link from "next/link";
 //TODO: Update Footer component
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -10,20 +10,32 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 items-start justify-between w-full max-w-440 mx-auto">
         {/* Columna izquierda */}
         <div className="text-sm text-secondary-dark dark:text-secondary">
-          &copy; {year} <span className="font-medium">Lilia E. Martinez Rosas</span>
+          &copy; {year}{" "}
+          <span className="font-medium">Lilia E. Martinez Rosas</span>
           <p>
-            <Link href="tel:+19792862584" className="hover:text-white transition-colors" aria-label="Call Phone Number">
-              +1 (979) 2 86 25 84
+            <Link
+              href="tel:+522727056002"
+              className="hover:text-white transition-colors"
+              aria-label="Call Phone Number"
+            >
+              +52 272 705 6002
             </Link>
           </p>
           <p>
-            <Link href="mailto:liliaelba123@gmail.com" className="hover:text-white transition-colors" aria-label="Send Email to liliaelba123@gmail.com">
+            <Link
+              href="mailto:liliaelba123@gmail.com"
+              className="hover:text-white transition-colors"
+              aria-label="Send Email to liliaelba123@gmail.com"
+            >
               liliaelba123@gmail.com
             </Link>
           </p>
           <p>
-            <Link href="https://maps.app.goo.gl/sG7Anx8cqFj4pmaK6" aria-label="Location">
-              College Station, TX
+            <Link
+              href="https://maps.app.goo.gl/XBZXYD3tpukcz5yd7"
+              aria-label="Location"
+            >
+              Orizaba Veracruz, Mexico
             </Link>
           </p>
         </div>
@@ -34,6 +46,6 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 export default Footer;
